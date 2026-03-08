@@ -1,0 +1,30 @@
+# all env files
+.env
+backend/.env
+frontend/.env
+
+# (optional) if you use local overrides
+.env.local
+backend/.env.local
+frontend/.env.local
+
+#all variatons of my venv
+.venv/
+venv/
+backend/.venv/
+frontend/.venv/
+
+#all python cache files
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# log files potentially created by uvicorn
+*.log
+
+# extra things chatgpt mentioned(still dont know about it properly)
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
