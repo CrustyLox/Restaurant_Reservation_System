@@ -25,15 +25,6 @@ CREATE TABLE restaurant_tables (
     capacity INT NOT NULL
 );
 
-CREATE TABLE menu_items (
-    menu_id SERIAL PRIMARY KEY,
-    restaurant_id INT REFERENCES restaurants(restaurant_id) ON DELETE CASCADE,
-    item_name VARCHAR(120) NOT NULL,
-    category VARCHAR(60),
-    price DECIMAL(10,2),
-    description TEXT
-);
-
 CREATE TABLE reservations (
     reservation_id SERIAL PRIMARY KEY,
     user_id INT REFERENCES users(user_id),
